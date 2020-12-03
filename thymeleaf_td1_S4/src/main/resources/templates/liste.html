@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<ul>
+<li th:each="nom : ${liste}">
+<th:block th:text="${nom}">nom</th:block>
+</li>
+</ul>
+<a href="/">Ajouter de nouveau</a>
+</body>
+</html>
